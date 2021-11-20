@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         width: '80vw',
         background: 'rgba(31, 28, 26, 0.4)',
         borderRadius: '0.5rem',
-        backdropFilter: "blur(0.5rem)"
+        backdropFilter: "blur(0.5rem)",
     },
     portrait: {
         display: 'flex',
@@ -25,10 +25,13 @@ const useStyles = makeStyles((theme) => ({
         width: '20vw',
         background: 'none',
         borderRadius: '0.8rem',
-        backdropFilter: "blur(0.5rem)",
-        margin: '10vh',
-        borderColor: "#FFF"
+        borderColor: "#fed81b",
+        position: 'absolute',
+        top: '8vh',
+        left: '8vh',
+        border: '1px solid'
     },
+
     img_portrait: {
         display: 'flex',
         zIndex: 1,
@@ -37,42 +40,59 @@ const useStyles = makeStyles((theme) => ({
         width: '20vw',
         background: '#FFF',
         borderRadius: '0.8rem',
-        margin: '14vh',
-        marginLeft: '-47vh',
+        position: 'absolute',
+        top: '10vh',
+        left: '10vh',
         objectFit: 'cover',
-        objectPosition: '100% 0'
+        objectPosition: '100% 0',
     },
+
     icon: {
         color: '#FFF',
         fontSize: '2rem'
     },
     colorText: {
+        position: 'absolute',
+        top: '7vh',
+        left: '40vh',
         color: '#FFF',
-        fontSize: '4rem',
+        fontSize: '4.5rem',
         zIndex: 1,
-        margin: '25vh',
-        marginLeft: '-25vh',
         fontFamily: 'Roboto',
         textShadow: '4px 6px 11px #5f5f5f'
     },
     name: {
         justifyContent: 'left',
         color: '#fed81b',
-        fontSize: '4.4rem',
+        fontSize: '5.6rem',
         zIndex: 1,
-        margin: '11vh',
+        margin: '15vh',
     },
     miniText: {
         color: '#fff',
+        fontSize: '1.2rem',
+        margin: '10px'
+    },
+
+    overview: {
+        color: "white",
+        width: '50vh',
+        height: '10vh',
+        zIndex: 2,
+        position: 'absolute',
+        top: '45vh',
+        left: '60vh',
+        textShadow: '4px 6px 11px #5f5f5f',
+        color: '#fff',
         fontSize: '1rem',
-        margin: '5px',
-    }
+    },
 }))
 
 export default function Profile() {
     const classes = useStyles();
+
     return (
-        <div className={classes.root} >
+        <div id='profile' className={classes.root} >
             <div className={classes.wrap}>
                 <div className={classes.portrait} />
                 <img className={classes.img_portrait}
@@ -83,8 +103,14 @@ export default function Profile() {
                     <span className={classes.name}>H A U</span>
                 </h1>
 
-                <div>
-                    
+                <div className={classes.overview}>
+                    <span >My name is Hau Le Xuan and i am engineer living in Ho Chi Minh City. I love reading and meeting new people and talking the greatest technical wherever i go.</span>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <span>Email: <br/> lexuanhau99@gmail.com</span> <br/>
+                    <div style={{height: "7px"}}/>
+                    <span>Phone: <br/> 012345678</span>
                 </div>
             </div>
         </div>
