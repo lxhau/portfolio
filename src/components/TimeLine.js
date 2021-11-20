@@ -10,6 +10,7 @@ export default function () {
             <TimeLineItem item={historyData[0]} key={0} />
             <TimeLineItem item={historyData[1]} key={1} />
             <TimeLineItem item={historyData[2]} key={2} />
+            <TimeLineItem item={historyData[3]} key={3} />
         </VerticalTimeline>
     );
 }
