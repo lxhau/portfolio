@@ -15,7 +15,7 @@ export default function TimeLineItem({ item, key }) {
                     contentStyle={{ backdropFilter: "blur(0.2rem)", backgroundColor: 'rgba(0,0,20,0.4)', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid blur(0.2rem) rgba(0,0,20,0.4)' }}
                     date={item.date}
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}>
+                    iconStyle={{ background: 'rgba(0,0,20,0.4)', color: '#fed81b' }}>
                     <SchoolIcon />
                     <h3 className="vertical-timeline-element-title"> {item.title} </h3>
                     <p>
