@@ -110,12 +110,12 @@ export default function Profile() {
                     src={process.env.PUBLIC_URL + '/assets/IMG_1707 .jpg'} />
 
                 <h1 className={classes.colorText} >L E X U A N
-                    <span className={classes.miniText}>Software Engineer - Freelance Design UX-UI</span> <br />
+                    <span className={classes.miniText}>Software Engineer</span> <br />
                     <span className={classes.name}>H A U</span>
                 </h1>
 
                 <div className={classes.overview}>
-                    <span >My name is Hau Le Xuan and i am engineer living in Ho Chi Minh City. I love reading and meeting new people and talking the greatest technical wherever i go.</span>
+                    <span>" My name is Hau Le Xuan and i am engineer living in Ho Chi Minh City. I love reading and meeting new people and talking the greatest technical wherever i go."</span>
                     <br />
                     <br />
                     <br />
